@@ -9,5 +9,13 @@ Bootstrap(app)
 def index():
     return render_template('index.html')
 
+@app.route('/dev/')
+def dev():
+    return ''
+
+@app.route('/about/')
+def about():
+    return ''
+
 if __name__ == '__main__':
     app.run()
