@@ -11,7 +11,7 @@ def index():
 
 @app.route('/dev/')
 def dev():
-    return ''
+    return render_template('dev.html')
 
 @app.route('/about/')
 def about():
