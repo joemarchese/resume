@@ -6,8 +6,8 @@ app = Flask(__name__)
 Bootstrap(app)
 
 @app.route('/')
-def index():
-    return render_template('index.html')
+def resume():
+    return render_template('resume.html')
 
 @app.route('/dev/')
 def dev():
@@ -15,7 +15,7 @@ def dev():
 
 @app.route('/about/')
 def about():
-    return ''
+    return render_template('about.html')
 
 if __name__ == '__main__':
     app.run()

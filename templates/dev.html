@@ -5,13 +5,58 @@
   <a href='https://github.com/joemarchese'>github</a>
 </div>
 
-<div>
+<div class='container'>
   <h3>Projects</h3>
+  <h4>Tetratonic Squares</h4>
+  <p class='container offset-2'>A music toy built with tkinter and pygame.</p>
+  <p class='container offset-2 text-muted'>This is my first attempt at building something <small>fun :D </small>in Python
+    using only tkinter and pygame. The word <i>Tetratonic</i> describes a scale with 4 notes.
+    The menu allows the user to change the scale to a few sonorous presets or to whatever custom, dissonant combination their ear desires.
+    The user can also choose their favorite MIDI instrument from (0) Acoustic Grand Piano - (127) Gunshot.
+    I tried to give the instrument (or what imagined as a touch screen instrument) the most
+    natural, logical setup where notes closest to the x-axis are lower in pitch and higher as you moved up or down and where
+    notes closest to the y-axis are higher in velocity (volume) and decrease as you move further left or right.
+    My hope is that the user would discover this organically through experimentation.</p>
+</div>
+<div class='container'>
   <figure>
      <img
       class='figure-img img-fluid'
-      src='https://raw.githubusercontent.com/joemarchese/tetratonicsquares/master/tetratonicsquaresgif.gif'
+      src={{ url_for('static', filename='tetratonicsquaresgif.gif')}}
       alt='Tetratonic Squares - A Music Toy'>
   </figure>
 </div>
+<div class='container'>
+  <h4>PolyNanna</h4>
+  <p class='container offset-2'>A program designed to randomize a polyanna gift exchange with familial restrictions</p>
+  <p class='container offset-2 text-muted'>This program attempted to solve a common problem at my family Christmas gathering;
+    How to make a polyanna gift exchange fair and fun with extended family, preventing recipients in each participant's nuclear family.
+    This presents a few good challenges: how to verify the drawing <small><i>read: convince family members it actually works</i></small>,
+    how to hide results from the program operator, how to present the information to the participants,
+    how to prevent repeats in subsequent years. I started building this program a few months after I started teaching myself to code.
+    <small><i>read: before I knew that I knew nothing.</i></small> and the github commits reflect my learning process. From
+    <a href='https://github.com/joemarchese/PolyNanna/commit/31da7480a7458c3063fd3a9f8187ad1012ce2296'>the first working commit</a>
+    with hardcoded data in the script, some unnecessary drawing logic, and poor organization. To the
+    <a href='https://github.com/joemarchese/PolyNanna/blob/927c7d9ebebb68a2c9fb6fce584b030e9e500527/PolyNanna.py'>2016 version</a>
+    with multiple classes, list comprehensions, history to prevent repeats, and data separated out into text files. To the
+      <a href='https://github.com/joemarchese/PolyNanna'>Most Recent Version</a>
+    with a GUI version, a WebApp version built with Flask that utilizes a Database and Bootstrap, testing with unittest, a README, docstrings, set intersections and differences,
+    and all the other capabilities of the language and libraries commonly used by Python developers.
+  </p>
+  <figure>
+    <img
+     class='figure-img img-fluid'
+     src={{ url_for('static', filename='polynannawebapp.png')}}
+     alt='Polynanna WebApp'>
+  </figure>
+  <figure>
+    <img
+     class='figure-img img-fluid'
+     src={{ url_for('static', filename='polynannagui.png')}}
+     alt='Polynanna WebApp'>
+  </figure>
+</div>
+
+
+
 {% endblock mycontent %}
