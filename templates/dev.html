@@ -2,7 +2,7 @@
 {% block mycontent %}
 <div class='container'>
   <h3>Dev</h3>
-  <a href='https://github.com/joemarchese'>github</a>
+  <h3><a href='https://github.com/joemarchese'>github</a><h3>
 </div>
 
 <div class='container'>
@@ -21,7 +21,7 @@
 <div class='container'>
   <figure>
      <img
-      class='figure-img img-fluid center-block'
+      class='figure-img img-fluid img-responsive center-block'
       src={{ url_for('static', filename='tetratonicsquaresgif.gif')}}
       alt='Tetratonic Squares - A Music Toy'>
   </figure>
@@ -49,19 +49,16 @@
   <div class='row'>
     <figure class='col-md-6'>
       <img
-       class='figure-img img-fluid center-block'
+       class='figure-img img-fluid img-responsive center-block'
        src={{ url_for('static', filename='polynannawebapp.png')}}
        alt='Polynanna WebApp'>
     </figure>
     <figure class='col-md-6'>
       <img
-       class='figure-img img-fluid center-block'
+       class='figure-img img-fluid img-responsive center-block'
        src={{ url_for('static', filename='polynannagui.png')}}
        alt='Polynanna WebApp'>
     </figure>
   </div>
 </div>
-
-
-
 {% endblock mycontent %}
