@@ -21,11 +21,12 @@
 <div class='container'>
   <figure>
      <img
-      class='figure-img img-fluid'
+      class='figure-img img-fluid center-block'
       src={{ url_for('static', filename='tetratonicsquaresgif.gif')}}
       alt='Tetratonic Squares - A Music Toy'>
   </figure>
 </div>
+<br>
 <div class='container'>
   <h4>PolyNanna</h4>
   <p class='container offset-2'>A program designed to randomize a polyanna gift exchange with familial restrictions</p>
@@ -43,18 +44,22 @@
     with a GUI version, a WebApp version built with Flask that utilizes a Database and Bootstrap, testing with unittest, a README, docstrings, set intersections and differences,
     and all the other capabilities of the language and libraries commonly used by Python developers.
   </p>
-  <figure>
-    <img
-     class='figure-img img-fluid'
-     src={{ url_for('static', filename='polynannawebapp.png')}}
-     alt='Polynanna WebApp'>
-  </figure>
-  <figure>
-    <img
-     class='figure-img img-fluid'
-     src={{ url_for('static', filename='polynannagui.png')}}
-     alt='Polynanna WebApp'>
-  </figure>
+</div>
+<div class='container'>
+  <div class='row'>
+    <figure class='col-md-6'>
+      <img
+       class='figure-img img-fluid center-block'
+       src={{ url_for('static', filename='polynannawebapp.png')}}
+       alt='Polynanna WebApp'>
+    </figure>
+    <figure class='col-md-6'>
+      <img
+       class='figure-img img-fluid center-block'
+       src={{ url_for('static', filename='polynannagui.png')}}
+       alt='Polynanna WebApp'>
+    </figure>
+  </div>
 </div>
 
 

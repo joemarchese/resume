@@ -1,25 +1,20 @@
 {% extends 'bootstrap/base.html' %}
 
 {% block content %}
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
 <title>Joseph Marchese Resume</title>
-<div class='container text-center'>
+<div class='navbar navbar-default navbar-fixed-top text-center'>
   <address>
-    <h1>Joseph Marchese</h1>
+    <h2>Joseph Marchese</h2>
      Williamsport, PA<br>
      <abbr title="Phone">P:</abbr> (570) 447-6127<br>
     <a href='mailto:#'>joeymarchese@gmail.com</a><h3>
   </address>
+  <ul class='nav navbar-nav'>
+    <li class='nav-item'><a class='nav-link active' href={{ url_for('resume') }}>Resume</a></li>
+    <li class='nav-item'><a class='nav-link active' href={{ url_for('dev') }}>Dev</a></li>
+    <li class='nav-item'><a class='nav-link disabled' href={{ url_for('about') }}>About</a></li>
+  </ul>
 </div>
-<div>
-<nav class='navbar navbar-default'>
-  <div class='container-fluid'>
-    <ul class='nav navbar-nav'>
-      <li class='nav-item'><a class='nav-link active' href={{ url_for('resume') }}>Resume</a></li>
-      <li class='nav-item'><a class='nav-link active' href={{ url_for('dev') }}>Dev</a></li>
-      <li class='nav-item'><a class='nav-link disabled' href={{ url_for('about') }}>About</a></li>
-    </ul>
-  </div>
-</nav>
-
 {% block mycontent %}{% endblock mycontent %}
 {% endblock content %}
