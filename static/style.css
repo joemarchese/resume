@@ -1,3 +1,14 @@
-body {
-  padding-top: 180px;
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+  margin-bottom: 0
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+address {
+  margin-bottom: 0
 }
