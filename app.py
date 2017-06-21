@@ -9,6 +9,10 @@ Bootstrap(app)
 def resume():
     return render_template('resume.html')
 
+@app.route('/resumepy/')
+def resumepy():
+    return render_template('resumepy.html')
+
 @app.route('/dev/')
 def dev():
     return render_template('dev.html')
