@@ -2,6 +2,7 @@
 
 {% block content %}
 <h4>resume.py</h4>
+<div class='container-fluid'>
 <pre class='prettyprint'><code>
 from candidate import Candidate, Experience
 
@@ -112,6 +113,7 @@ class Experience:
     def add_responsibilities(self, responsibilities_list):
         self.responsibilities.extend(responsibilities_list)
 </code></pre>
+</div>
 {% endblock content %}
 
 {% block scripts %}
